@@ -1,8 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Disclaimer
+currently not working with Next.JS version 15
+#### related issue on GitHub:
+* [Nextjs 15](https://github.com/jantimon/next-yak/issues/181)
+* [migrate to swc 3.0.0 for next upgrade](https://github.com/jantimon/next-yak/pull/196)
+
 ## Next-Yak CSS
 ```bash
+pnpm install -D next-yak
+```
 
+```typescript
+// next.config.js
+import { withYak } from "next-yak/withYak";
+
+const nextConfig = {
+  // your next.js config
+};
+
+export default withYak(nextConfig);
 ```
 
 ## Getting Started
